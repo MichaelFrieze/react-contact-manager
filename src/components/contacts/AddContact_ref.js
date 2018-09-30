@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// This is about Uncontrolled Components & Refs
+
 class AddContact extends Component {
   // Also, for ref's we have to create a constructor
   constructor(props) {
