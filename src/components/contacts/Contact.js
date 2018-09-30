@@ -14,6 +14,7 @@ class Contact extends Component {
   render() {
     const { id, name, email, phone } = this.props.contact;
     const { showContactInfo } = this.state;
+    console.log('This constantly renders and update: ', this.props.contact);
 
     return (
       <Consumer>
