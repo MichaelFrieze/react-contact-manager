@@ -2,13 +2,23 @@ import React, { Component } from 'react';
 
 class Test extends Component {
   state = {
-    test: 'test'
+    title: '',
+    body: ''
   };
 
   componentDidMount() {
-    console.log('componentDidMount...');
+    fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(data =>
+        this.setState({
+          title: data.title,
+          body: data.body
+        })
+      );
   }
 
+  //comment out all of these life cycle methods
+  /* 
   componentWillMount() {
     console.log('componentWillMount...');
   }
@@ -34,7 +44,7 @@ class Test extends Component {
   getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log('getSnapshotBeforeUpdate...');
   }
-
+ */
   render() {
     return (
       <div>
