@@ -7,7 +7,7 @@ class Test extends Component {
   };
 
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
       .then(response => response.json())
       .then(data =>
         this.setState({
@@ -17,34 +17,6 @@ class Test extends Component {
       );
   }
 
-  //comment out all of these life cycle methods
-  /* 
-  componentWillMount() {
-    console.log('componentWillMount...');
-  }
-
-  componentDidUpdate() {
-    console.log('componentDidUpdate...');
-  }
-
-  componentWillUpdate() {
-    console.log('componentWillUpdate...');
-  }
-
-  componentWillReceiveProps(nextProps, nextState) {
-    console.log('componentWillReceiveProps...');
-  }
-
-  static getDerivedStateFromProps(nextProps, prevState) {
-    return {
-      test: 'something'
-    };
-  }
-
-  getSnapshotBeforeUpdate(prevProps, prevState) {
-    console.log('getSnapshotBeforeUpdate...');
-  }
- */
   render() {
     return (
       <div>
