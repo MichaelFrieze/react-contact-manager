@@ -18,8 +18,8 @@ Some other things to mention:
 	* All of it can be deleted from the contact menu as well as edited
 	* You can add your own contacts as well, however you cannot edit your own contacts
 	* Since JSONPlaceholder isn’t a real back-end then the manually added contacts are not editable
-	* This also caused issues with even adding new contacts, but I just created a try/catch to deal with it. 
-	* So, the contact just gets added to the DOM, but it is still successfully making the post request to the fake REST API as well.
+	* This also caused issues with adding new contacts, but I just created a try/catch to deal with it. 
+	* So, the contact just gets added to the DOM, but it is still successfully making the post request to the fake REST API.
 * View this app by clicking HERE
 
 
