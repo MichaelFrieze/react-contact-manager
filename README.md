@@ -2,7 +2,15 @@
 
 After downloading this repo, to run this from the command line using bash (make sure you have NodeJS installed):
 ```bash
+npm install
 npm start
+```
+
+After that, make sure everything is up to date:
+```bash
+npm outdated
+# if anything needs udpated, then
+npm update
 ```
 
 This is basically your typical contact manager app that I built to learn how to use react. I will create more advanced versions of this in another repo, but this is just going to get pushed to GitHub pages as a static site. I am using Context API to manage state. Next, I will use Redux, but not here. 
@@ -18,9 +26,9 @@ Some other things to mention:
 	* All of it can be deleted from the contact menu as well as edited
 	* You can add your own contacts as well, however you cannot edit your own contacts
 	* Since JSONPlaceholder isn’t a real back-end then the manually added contacts are not editable
-	* This also caused issues with adding new contacts, but I just created a try/catch to deal with it. 
+	# This also caused issues with adding new contacts, but I just created a try/catch to deal with it. 
 	* So, the contact just gets added to the DOM, but it is still successfully making the post request to the fake REST API.
-* View this app by clicking HERE
+* View this app by clicking [HERE](https://michaelfrieze.github.io/react-contact-manager)
 
 
 If you are having any problems, then go to the `App.js` file and change `HashRouter` to `BrowserRouter`.
@@ -37,4 +45,27 @@ import Header from './components/layout/Header';
 import About from './components/pages/About';
 import NotFound from './components/pages/NotFound';
 import Test from './components/test/Test';
+```
+
+
+Also, here are a some other ways to fix problems. 
+
+If you are having problems with `npm start` then you might need to kill a process. First, use `lsof` on port `3000` to see if anything is running:
+```bash
+lsof -i tcp:3000
+
+# then, if you see something running on the port then you can kill it
+kill -9 "port number"
+
+# for example
+kill -9 7372
+```
+
+
+Finally, you can always just reset the git repo and start fresh:
+ ::WARNING, THIS WILL ERASE ANY WORK YOU HAVE DONE THAT HAS NOT BEEN COMMITTED AND PUSHED::
+```bash
+git fetch
+git reset --hard
+git clean -x -d -f
 ```

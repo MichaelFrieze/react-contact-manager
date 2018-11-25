@@ -7,9 +7,11 @@ const Header = props => {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-danger mb-3 py-0">
       <div className="container">
-        <a href="/" className="navbar-brand">
-          {branding}
-        </a>
+        <div>
+          <Link to="/" className="navbar-brand">
+            {branding}
+          </Link>
+        </div>
         <div>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
@@ -26,6 +28,11 @@ const Header = props => {
               <Link to="/about" className="nav-link">
                 <i className="fas fa-question" /> About
               </Link>
+            </li>
+            <li className="nav-item">
+              <a href="https://github.com/MichaelFrieze/react-contact-manager" className="nav-link">
+                <i className="fab fa-github" /> GitHub
+              </a>
             </li>
           </ul>
         </div>
