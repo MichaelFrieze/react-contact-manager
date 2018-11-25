@@ -68,7 +68,6 @@ kill -9 7372
 
 
 Finally, you can always just reset the git repo and start fresh:
- ::WARNING, THIS WILL ERASE ANY WORK YOU HAVE DONE THAT HAS NOT BEEN COMMITTED AND PUSHED::
 ```bash
 git fetch
 git reset --hard
