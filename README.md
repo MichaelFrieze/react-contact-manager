@@ -1,4 +1,9 @@
 # Static React Contact Manager
+This is basically your typical contact manager app that I built to learn how to use react. I will create more advanced versions of this in another repo, but this is just going to get pushed to GitHub pages as a static site. I am using Context API to manage state. Next, I will use Redux, but not here. 
+
+The reason for choosing to build a contact manager app is because it covers all 4 aspects of CRUD; Create, Read, Update, and Delete. As boring as it might sound, it is a great way to learn. 
+
+---
 
 After downloading this repo, to run this from the command line using bash (make sure you have NodeJS installed):
 ```bash
@@ -13,9 +18,7 @@ npm outdated
 npm update
 ```
 
-This is basically your typical contact manager app that I built to learn how to use react. I will create more advanced versions of this in another repo, but this is just going to get pushed to GitHub pages as a static site. I am using Context API to manage state. Next, I will use Redux, but not here. 
-
-The reason for choosing to build a contact manager app is because it covers all 4 aspects of CRUD; Create, Read, Update, and Delete. As boring as it might sound, it is a great way to learn. 
+---
 
 Some other things to mention:
 * For styling, I used bootstrap. 
@@ -30,6 +33,7 @@ Some other things to mention:
 	* So, the contact just gets added to the DOM, but it is still successfully making the post request to the fake REST API.
 * View this app by clicking [HERE](https://michaelfrieze.github.io/react-contact-manager)
 
+---
 
 If you are having any problems, then go to the `App.js` file and change `HashRouter` to `BrowserRouter`.
 Like this: `App.js`
@@ -47,8 +51,9 @@ import NotFound from './components/pages/NotFound';
 import Test from './components/test/Test';
 ```
 
+---
 
-Also, here are a some other ways to fix problems. 
+### Also, here are some other ways to fix problems. 
 
 If you are having problems with `npm start` then you might need to kill a process. First, use `lsof` on port `3000` to see if anything is running:
 ```bash
