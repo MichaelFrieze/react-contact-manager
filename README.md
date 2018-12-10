@@ -75,9 +75,9 @@ git clean -x -d -f
 ```
 
 
-NPM might need to be updated. So, after you have used `npm install`
+Some of the dependencies might be outdated in `package.json` . So, after you have used `npm install`
 ```bash
-# To see if npm needs updated:
+# To see if anything is outdated:
 npm outdated
 
 # If something is out of date:
