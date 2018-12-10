@@ -1,5 +1,5 @@
 # # Static React Contact Manager
-This is your typical contact manager app that I built to learn how to use react. For state management, I used the Context API as well as Redux. The Context API is being used for the static site demo that you can checkout [here](https://michaelfrieze.github.io/react-contact-manager/#/). If you want to see how Redux was used instead of the Context API then you can checkout the `redux` branch.
+This is basically your typical contact manager app that I built to learn how to use react. For state management, I used the Context API as well as Redux. The Context API is being used for the static site demo that you can checkout [here](https://michaelfrieze.github.io/react-contact-manager/#/). If you want to see how Redux was used instead of the Context API then you can checkout the `redux` branch.
 
 The reason for choosing to build a contact manager app is because it covers all 4 aspects of CRUD; Create, Read, Update, and Delete. As boring as it might sound, it is a great way to learn. 
 
@@ -72,4 +72,17 @@ Finally, you can always just reset the git repo and start fresh:
 git fetch
 git reset --hard
 git clean -x -d -f
+```
+
+
+NPM might need to be updated. So, after you have used `npm install`
+```bash
+# To see if npm needs updated:
+npm outdated
+
+# If something is out of date:
+npm update
+
+# After that I would probably reset the git repo and run this again:
+npm install
 ```
