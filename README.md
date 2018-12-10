@@ -1,5 +1,5 @@
-# Static React Contact Manager
-This is basically your typical contact manager app that I built to learn how to use react. I will create more advanced versions of this in another repo, but this is just going to get pushed to GitHub pages as a static site. I am using Context API to manage state. Next, I will use Redux, but not here. 
+# # Static React Contact Manager
+This is your typical contact manager app that I built to learn how to use react. For state management, I used the Context API as well as Redux. The Context API is being used for the static site demo that you can checkout [here](https://michaelfrieze.github.io/react-contact-manager/#/). If you want to see how Redux was used instead of the Context API then you can checkout the `redux` branch.
 
 The reason for choosing to build a contact manager app is because it covers all 4 aspects of CRUD; Create, Read, Update, and Delete. As boring as it might sound, it is a great way to learn. 
 
