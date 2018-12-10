@@ -67,7 +67,7 @@ kill -9 7372
 ```
 
 
-Finally, you can always just reset the git repo and start fresh:
+Sometimes, it is best to just reset the git repo and start fresh:
 ```bash
 git fetch
 git reset --hard
