@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Header = props => {
   const { branding } = props;
@@ -30,7 +30,10 @@ const Header = props => {
               </Link>
             </li>
             <li className="nav-item">
-              <a href="https://github.com/MichaelFrieze/react-contact-manager" className="nav-link">
+              <a
+                href="https://github.com/MichaelFrieze/react-contact-manager"
+                className="nav-link"
+              >
                 <i className="fab fa-github" /> GitHub
               </a>
             </li>
@@ -42,7 +45,7 @@ const Header = props => {
 };
 
 Header.defaultProps = {
-  branding: 'My App'
+  branding: "My App"
 };
 
 Header.propTypes = {

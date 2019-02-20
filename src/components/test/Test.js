@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Test extends Component {
   state = {
-    title: '',
-    body: ''
+    title: "",
+    body: ""
   };
 
   componentDidMount() {
@@ -27,7 +27,7 @@ class Test extends Component {
 
     // now lets use state instead of console
     // we don't need arrow function because this is a lifecycle method
-    fetch('https://jsonplaceholder.typicode.com/posts/1')
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
       .then(response => response.json())
       .then(data =>
         this.setState({
