@@ -18,7 +18,7 @@ Some other things to mention:
 * For styling, I used bootstrap. 
 * Check out the documentation branch to see all my notes as I built this app.
 * If you notice there is no comments in the code, that is because it is all in the documentation
-* JSONPlaceholder was used quite heavily in this app. I highly recommend it: [JSONPlaceholder - Fake online REST API for developers](https://jsonplaceholder.typicode.com/)
+* JSONPlaceholder was used as a REST API: [JSONPlaceholder - Fake online REST API for developers](https://jsonplaceholder.typicode.com/)
 * All of our contact data came from JSONPlaceholder.
 * All of it can be deleted from the contact menu as well as edited
 * You can add your own contacts as well, however you cannot edit your own contacts
