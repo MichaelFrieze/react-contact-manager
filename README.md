@@ -1,5 +1,5 @@
 # Static React Contact Manager
-This is a typical contact manager app that I built to learn how to use react. For state management I used the Context API. You can checkout the live demo [here](https://michaelfrieze.github.io/react-contact-manager/#/). 
+This is a contact manager app that I built to learn how to use react. For state management I used the Context API. You can checkout the live demo [here](https://michaelfrieze.github.io/react-contact-manager/#/). 
 
 The reason for choosing to build a contact manager app is because it covers all 4 aspects of CRUD.
 
