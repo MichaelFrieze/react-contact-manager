@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.97f068ba.css",
-  "main.css.map": "static/css/main.97f068ba.css.map",
-  "main.js": "static/js/main.aeaf78bf.js",
-  "main.js.map": "static/js/main.aeaf78bf.js.map"
+  "main.css": "/react-contact-manager/static/css/main.11d832ee.chunk.css",
+  "main.js": "/react-contact-manager/static/js/main.f911a10a.chunk.js",
+  "main.js.map": "/react-contact-manager/static/js/main.f911a10a.chunk.js.map",
+  "runtime~main.js": "/react-contact-manager/static/js/runtime~main.156cf5b1.js",
+  "runtime~main.js.map": "/react-contact-manager/static/js/runtime~main.156cf5b1.js.map",
+  "static/css/2.802a652a.chunk.css": "/react-contact-manager/static/css/2.802a652a.chunk.css",
+  "static/js/2.1038f5d9.chunk.js": "/react-contact-manager/static/js/2.1038f5d9.chunk.js",
+  "static/js/2.1038f5d9.chunk.js.map": "/react-contact-manager/static/js/2.1038f5d9.chunk.js.map",
+  "index.html": "/react-contact-manager/index.html",
+  "precache-manifest.ebf29fc495fba5bcd08bc683bb5d3ae8.js": "/react-contact-manager/precache-manifest.ebf29fc495fba5bcd08bc683bb5d3ae8.js",
+  "service-worker.js": "/react-contact-manager/service-worker.js",
+  "static/css/2.802a652a.chunk.css.map": "/react-contact-manager/static/css/2.802a652a.chunk.css.map",
+  "static/css/main.11d832ee.chunk.css.map": "/react-contact-manager/static/css/main.11d832ee.chunk.css.map"
 }
