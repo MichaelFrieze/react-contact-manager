@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 // This is about Uncontrolled Components & Refs
 
@@ -27,9 +27,9 @@ class AddContact extends Component {
   };
 
   static defaultProps = {
-    name: 'Fred Smith',
-    email: 'fred@yahoo.com',
-    phone: '777-777-7777'
+    name: "Fred Smith",
+    email: "fred@yahoo.com",
+    phone: "777-777-7777"
   };
 
   render() {
@@ -73,7 +73,11 @@ class AddContact extends Component {
                 ref={this.phoneInput}
               />
             </div>
-            <input type="submit" value="Add Contact" className="btn btn-light btn-block" />
+            <input
+              type="submit"
+              value="Add Contact"
+              className="btn btn-light btn-block"
+            />
           </form>
         </div>
       </div>

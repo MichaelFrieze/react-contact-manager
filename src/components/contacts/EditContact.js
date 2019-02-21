@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
-import { Consumer } from '../../context';
-import TextInputGroup from '../layout/TextInputGroup';
-import axios from 'axios';
+import React, { Component } from "react";
+import { Consumer } from "../../context";
+import TextInputGroup from "../layout/TextInputGroup";
+import axios from "axios";
 
 class EditContact extends Component {
   state = {
-    name: '',
-    email: '',
-    phone: '',
+    name: "",
+    email: "",
+    phone: "",
     errors: {}
   };
 
   async componentDidMount() {
     const { id } = this.props.match.params;
-    const res = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`);
+    const res = await axios.get(
+      `https://jsonplaceholder.typicode.com/users/${id}`
+    );
 
     const contact = res.data;
 
@@ -29,21 +31,21 @@ class EditContact extends Component {
 
     const { name, email, phone } = this.state;
 
-    if (name === '') {
+    if (name === "") {
       this.setState({
-        errors: { name: 'Name is Required' }
+        errors: { name: "Name is Required" }
       });
       return;
     }
-    if (email === '') {
+    if (email === "") {
       this.setState({
-        errors: { email: 'Email is Required' }
+        errors: { email: "Email is Required" }
       });
       return;
     }
-    if (phone === '') {
+    if (phone === "") {
       this.setState({
-        errors: { phone: 'Phone is Required' }
+        errors: { phone: "Phone is Required" }
       });
       return;
     }
@@ -56,18 +58,21 @@ class EditContact extends Component {
 
     const { id } = this.props.match.params;
 
-    const res = await axios.put(`https://jsonplaceholder.typicode.com/users/${id}`, updateContact);
+    const res = await axios.put(
+      `https://jsonplaceholder.typicode.com/users/${id}`,
+      updateContact
+    );
 
-    dispatch({ type: 'UPDATE_CONTACT', payload: res.data });
+    dispatch({ type: "UPDATE_CONTACT", payload: res.data });
 
     this.setState({
-      name: '',
-      email: '',
-      phone: '',
+      name: "",
+      email: "",
+      phone: "",
       errors: {}
     });
 
-    this.props.history.push('/');
+    this.props.history.push("/");
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -110,7 +115,11 @@ class EditContact extends Component {
                     onChange={this.onChange}
                     error={errors.phone}
                   />
-                  <input type="submit" value="Update Contact" className="btn btn-light btn-block" />
+                  <input
+                    type="submit"
+                    value="Update Contact"
+                    className="btn btn-light btn-block"
+                  />
                 </form>
               </div>
             </div>
