@@ -1,11 +1,9 @@
 # Static React Contact Manager
 This is basically your typical contact manager app that I built to learn how to use react. For state management, I used the Context API as well as Redux. The Context API is being used for the static site demo that you can checkout [here](https://michaelfrieze.github.io/react-contact-manager/#/). If you want to see how Redux was used instead of the Context API then you can checkout the `redux` branch.
 
-The reason for choosing to build a contact manager app is because it covers all 4 aspects of CRUD; Create, Read, Update, and Delete.
+The reason for choosing to build a contact manager app is because it covers all 4 aspects of CRUD.
 
 ---
-
-
 
 To run this application:
 ```bash
@@ -15,8 +13,6 @@ npm start
 ```
 
 ---
-
-
 
 Some other things to mention:
 * For styling, I used bootstrap. 
@@ -33,8 +29,6 @@ Some other things to mention:
 
 ---
 
-
-
 ### Also, here are some other ways to fix problems. 
 
 If you are having problems with `npm start` then you might need to kill a process. First, use `lsof` on port `3000` to see if anything is running:
@@ -47,7 +41,6 @@ kill -9 "port number"
 # for example
 kill -9 7372
 ```
-
 
 Sometimes, it is best to just reset the git repo and start fresh:
 ```bash
