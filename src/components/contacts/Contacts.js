@@ -41,3 +41,16 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(Contacts);
+
+/* 
+we created an action type of get contacts
+
+inside the contacts component we brought in connect to connect react and redux
+
+we mapped getContacts to props so we could call this action
+then dispatch to the reducer
+
+we also added mapState to props so we could get the contacts that are in the state
+
+we pulled those props that contained the state on line 13
+*/
