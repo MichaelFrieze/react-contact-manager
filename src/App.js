@@ -8,11 +8,14 @@ import About from "./components/pages/About";
 import NotFound from "./components/pages/NotFound";
 
 import { Provider } from "react-redux";
+// this provides our application with state
 import store from "./store";
+// this is the store file that we created
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
+// We wrapped everything in the provider
 class App extends Component {
   render() {
     return (
